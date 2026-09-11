@@ -1,0 +1,452 @@
+{
+  "runId": "2026-08-19T17-43-28Z",
+  "source": "pomiar własny",
+  "generatedAt": "2026-08-19T18:47:19.220Z",
+  "environment": {
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "chrome": "152.0.7977.42",
+    "chromePath": "%LOCALAPPDATA%\\ChromeForTesting\\chrome\\win64-152.0.7977.42\\chrome-win64\\chrome.exe",
+    "os": "Windows_NT 10.0.26200 (x64)",
+    "cpu": "AMD Ryzen 5 7535HS with Radeon Graphics        ",
+    "ramGB": 13.7,
+    "gitSha": "68b4d7d102eddcb0f9365625a90317e752e5b657",
+    "startedAt": "2026-08-19T17:43:30.565Z",
+    "lighthouseProfile": "mobile",
+    "repetitions": 5,
+    "tbtScenario": "/?limit=20",
+    "memoryScenario": "/?limit=1000"
+  },
+  "protocol": {
+    "lighthouseProfile": "mobile",
+    "repetitions": 5,
+    "aggregation": "mediana",
+    "tbtScenario": "/?limit=20",
+    "memoryScenario": "/?limit=1000",
+    "pauseSameFrameworkSec": [
+      30,
+      60
+    ],
+    "pauseDifferentFrameworkSec": [
+      120,
+      180
+    ],
+    "chromeSessions": "osobna świeża instancja Chrome na każde powtórzenie tbt i memory (uzasadnienie: bench/memory/measure.mjs)"
+  },
+  "runOrder": [
+    "angular",
+    "next",
+    "vue",
+    "react",
+    "svelte",
+    "nuxt"
+  ],
+  "frameworks": {
+    "angular": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 114795,
+        "assets": 2,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 114795,
+            "files": 2,
+            "urls": [
+              "/main-7HG4VLMA.js",
+              "/styles-V7LOWGDA.css"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 114795,
+            "files": 2,
+            "urls": [
+              "/main-7HG4VLMA.js",
+              "/styles-V7LOWGDA.css"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 114795,
+              "files": 2
+            },
+            "build2": {
+              "gzipBytes": 114795,
+              "files": 2
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 89,
+        "values": [
+          89,
+          89,
+          88,
+          88,
+          97
+        ],
+        "n": 5,
+        "fcpMedianMs": 3811.9700000000003,
+        "ttiMedianMs": 4512.533
+      },
+      "memory": {
+        "medianBytes": 20689788,
+        "medianMB": 19.73,
+        "values": [
+          20687452,
+          20689788,
+          20684992,
+          20690224,
+          20693208
+        ],
+        "n": 5
+      },
+      "error": null
+    },
+    "next": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 183331,
+        "assets": 9,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 183331,
+            "files": 9,
+            "urls": [
+              "/_next/static/chunks/09r8cx-jn5loi.js",
+              "/_next/static/chunks/2hbx0u5pc3csk.js",
+              "/_next/static/chunks/0cz1d0mv5g_q7.js",
+              "/_next/static/chunks/3jtwmycxydvp0.js",
+              "/_next/static/chunks/1yy4evsq4js9c.js",
+              "/_next/static/chunks/0a1badl28xsv9.css",
+              "/_next/static/chunks/turbopack-1x7mm-turn0p9.js",
+              "/_next/static/chunks/2_jiyffbl1jbm.js",
+              "/_next/static/chunks/310vm2bl3xxpt.js"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 183331,
+            "files": 9,
+            "urls": [
+              "/_next/static/chunks/09r8cx-jn5loi.js",
+              "/_next/static/chunks/2hbx0u5pc3csk.js",
+              "/_next/static/chunks/0cz1d0mv5g_q7.js",
+              "/_next/static/chunks/3jtwmycxydvp0.js",
+              "/_next/static/chunks/1yy4evsq4js9c.js",
+              "/_next/static/chunks/0a1badl28xsv9.css",
+              "/_next/static/chunks/turbopack-1x7mm-turn0p9.js",
+              "/_next/static/chunks/2_jiyffbl1jbm.js",
+              "/_next/static/chunks/310vm2bl3xxpt.js"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 195243,
+              "files": 19
+            },
+            "build2": {
+              "gzipBytes": 195243,
+              "files": 19
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 43,
+        "values": [
+          39,
+          52,
+          48,
+          41,
+          43
+        ],
+        "n": 5,
+        "fcpMedianMs": 1383.895,
+        "ttiMedianMs": 2563.845
+      },
+      "memory": {
+        "medianBytes": 10644352,
+        "medianMB": 10.15,
+        "values": [
+          10642032,
+          10644352,
+          10639964,
+          15565484,
+          10646832
+        ],
+        "n": 5
+      },
+      "error": null
+    },
+    "vue": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 41824,
+        "assets": 2,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 41824,
+            "files": 2,
+            "urls": [
+              "/assets/index-HycXeBU5.js",
+              "/assets/index-_BbT5t9z.css"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 41824,
+            "files": 2,
+            "urls": [
+              "/assets/index-HycXeBU5.js",
+              "/assets/index-_BbT5t9z.css"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 61725,
+              "files": 9
+            },
+            "build2": {
+              "gzipBytes": 61725,
+              "files": 9
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 14,
+        "values": [
+          15,
+          14,
+          12,
+          22,
+          14
+        ],
+        "n": 5,
+        "fcpMedianMs": 1503.235,
+        "ttiMedianMs": 2029.143
+      },
+      "memory": {
+        "medianBytes": 26022836,
+        "medianMB": 24.82,
+        "values": [
+          26045652,
+          26020692,
+          26045000,
+          26022836,
+          26022756
+        ],
+        "n": 5
+      },
+      "error": null
+    },
+    "react": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 93984,
+        "assets": 2,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 93984,
+            "files": 2,
+            "urls": [
+              "/assets/index-B-02nqmS.js",
+              "/assets/index-G7tt2fdG.css"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 93984,
+            "files": 2,
+            "urls": [
+              "/assets/index-B-02nqmS.js",
+              "/assets/index-G7tt2fdG.css"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 93984,
+              "files": 2
+            },
+            "build2": {
+              "gzipBytes": 93984,
+              "files": 2
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 0,
+        "values": [
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        "n": 5,
+        "fcpMedianMs": 1803.369,
+        "ttiMedianMs": 2115.2529999999997
+      },
+      "memory": {
+        "medianBytes": 13343964,
+        "medianMB": 12.73,
+        "values": [
+          13344612,
+          13343964,
+          13343996,
+          13343916,
+          13343944
+        ],
+        "n": 5
+      },
+      "error": null
+    },
+    "svelte": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 41344,
+        "assets": 2,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 41344,
+            "files": 2,
+            "urls": [
+              "/assets/index-C1cdMGIZ.js",
+              "/assets/index-_BbT5t9z.css"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 41344,
+            "files": 2,
+            "urls": [
+              "/assets/index-C1cdMGIZ.js",
+              "/assets/index-_BbT5t9z.css"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 41344,
+              "files": 2
+            },
+            "build2": {
+              "gzipBytes": 41344,
+              "files": 2
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 14,
+        "values": [
+          14,
+          12,
+          20,
+          14,
+          17
+        ],
+        "n": 5,
+        "fcpMedianMs": 1381.3964999999998,
+        "ttiMedianMs": 2024.3244000000004
+      },
+      "memory": {
+        "medianBytes": 16991664,
+        "medianMB": 16.2,
+        "values": [
+          16991664,
+          16989372,
+          16992544,
+          16992008,
+          16991060
+        ],
+        "n": 5
+      },
+      "error": null
+    },
+    "nuxt": {
+      "status": "OK",
+      "bundle": {
+        "valueGzipBytes": 85294,
+        "assets": 12,
+        "buildStability": {
+          "build1": {
+            "gzipBytes": 85294,
+            "files": 12,
+            "urls": [
+              "/_nuxt/CDOaBadr.js",
+              "/_nuxt/CNadt6uC.js",
+              "/_nuxt/B5OXs9Kn.js",
+              "/_nuxt/DlNY6ErF.js",
+              "/_nuxt/entry.CA0OxEmw.css",
+              "/_nuxt/G_5q1KFl.js",
+              "/_nuxt/C-Beaxz0.js",
+              "/_nuxt/C-10wMc_.js",
+              "/_nuxt/BMOQBVvJ.js",
+              "/_nuxt/BBeByjud.js",
+              "/_nuxt/CfiitD0k.js",
+              "/_nuxt/BBSTa77M.js"
+            ]
+          },
+          "build2": {
+            "gzipBytes": 85294,
+            "files": 12,
+            "urls": [
+              "/_nuxt/CDOaBadr.js",
+              "/_nuxt/CNadt6uC.js",
+              "/_nuxt/B5OXs9Kn.js",
+              "/_nuxt/DlNY6ErF.js",
+              "/_nuxt/entry.CA0OxEmw.css",
+              "/_nuxt/G_5q1KFl.js",
+              "/_nuxt/C-Beaxz0.js",
+              "/_nuxt/C-10wMc_.js",
+              "/_nuxt/BMOQBVvJ.js",
+              "/_nuxt/BBeByjud.js",
+              "/_nuxt/CfiitD0k.js",
+              "/_nuxt/BBSTa77M.js"
+            ]
+          },
+          "stable": true,
+          "distDump": {
+            "build1": {
+              "gzipBytes": 116690,
+              "files": 28
+            },
+            "build2": {
+              "gzipBytes": 116690,
+              "files": 28
+            }
+          }
+        }
+      },
+      "tbt": {
+        "medianMs": 24,
+        "values": [
+          26,
+          24,
+          24.5,
+          21.5,
+          22.5
+        ],
+        "n": 5,
+        "fcpMedianMs": 2705.1846,
+        "ttiMedianMs": 3206.1713
+      },
+      "memory": {
+        "medianBytes": 43778220,
+        "medianMB": 41.75,
+        "values": [
+          43778220,
+          43682408,
+          43786552,
+          43779836,
+          43777324
+        ],
+        "n": 5
+      },
+      "error": null
+    }
+  }
+}

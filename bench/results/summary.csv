@@ -1,0 +1,19 @@
+framework,metric,value,unit,n,raw_values,scenario,source,date,tool,tool_version,chrome,node,git_sha,run_id,status
+angular,bundle,114795,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+angular,tbt,89,ms,5,"89; 89; 88; 88; 97",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+angular,memory,19.73,MB usedJSHeap,5,"19.73; 19.73; 19.73; 19.73; 19.73",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+next,bundle,183331,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+next,tbt,43,ms,5,"39; 52; 48; 41; 43",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+next,memory,10.15,MB usedJSHeap,5,"10.15; 10.15; 10.15; 14.84; 10.15",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+vue,bundle,41824,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+vue,tbt,14,ms,5,"15; 14; 12; 22; 14",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+vue,memory,24.82,MB usedJSHeap,5,"24.84; 24.82; 24.84; 24.82; 24.82",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+react,bundle,93984,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+react,tbt,0,ms,5,"0; 36; 0; 0; 0",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+react,memory,12.73,MB usedJSHeap,5,"12.73; 12.73; 12.73; 12.73; 12.73",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+svelte,bundle,41344,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+svelte,tbt,14,ms,5,"14; 12; 20; 14; 17",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+svelte,memory,16.2,MB usedJSHeap,5,"16.2; 16.2; 16.21; 16.2; 16.2",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+nuxt,bundle,85294,B gzip,1,,initial load /,pomiar własny,2026-08-19T18:47:19.220Z,zlib gzip -9,1.3.1-e00f703,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+nuxt,tbt,24,ms,5,"26; 24; 24.5; 21.5; 22.5",/?limit=20 [mobile],pomiar własny,2026-08-19T18:47:19.220Z,Lighthouse,13.4.1,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK
+nuxt,memory,41.75,MB usedJSHeap,5,"41.75; 41.66; 41.76; 41.75; 41.75",/?limit=1000,pomiar własny,2026-08-19T18:47:19.220Z,CDP Performance.getMetrics,,152.0.7977.42,v24.15.0,68b4d7d102eddcb0f9365625a90317e752e5b657,2026-08-19T17-43-28Z,OK

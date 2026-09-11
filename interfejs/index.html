@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSS - dobór technologii JavaScript</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>DSS - dobór technologii JavaScript</h1>
+    <p class="subtitle">
+      Wielokryterialny system wspomagania decyzji technologicznych z wykorzystaniem metody PROMETHEE II oraz analizy
+      GAIA.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Scenariusz wolumenu danych testowych</h2>
+      <div id="volume-buttons" class="button-row"></div>
+      <p><strong id="volume-label"></strong> - <span id="volume-desc"></span></p>
+    </section>
+
+    <section>
+      <h2>2. Preferencje decydenta i wagi kryteriów</h2>
+      <div id="wizard"></div>
+      <p class="method-line">Aktywna metoda ustalania wag: <strong id="method-label"></strong></p>
+      <div class="objective-row">
+        <span class="objective-label">Wagi wyznaczane algorytmicznie:</span>
+        <button id="btn-critic" type="button"
+          title="Metoda CRITIC (na podstawie odchylenia standardowego i korelacji)">CRITIC</button>
+        <button id="btn-merec" type="button"
+          title="Metoda MEREC (na podstawie logarytmicznego efektu usunięcia kryterium)">MEREC</button>
+      </div>
+      <div class="action-row">
+        <span></span>
+        <button id="btn-compute" type="button" class="btn-primary">Wyznacz ranking PROMETHEE II</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Wyniki procedury wielokryterialnej PROMETHEE II</h2>
+      <div id="results-empty" class="empty-results">
+        <div class="empty-results-title">Panel gotowości obliczeniowej</div>
+        <div class="empty-results-desc">
+          Wskaż preferencje decydenta w formularzu powyżej i uruchom procedurę analityczną przyciskiem „Wyznacz ranking
+          PROMETHEE II”. Tabela przepływów, bilans netto, dekompozycja wkładów kryteriów oraz płaszczyzna GAIA zostaną
+          zaprezentowane w tym panelu.
+        </div>
+      </div>
+      <div id="results-content" style="display: none;">
+        <div class="result-grid">
+          <table id="ranking-table">
+            <thead>
+              <tr>
+                <th>Poz.</th>
+                <th>Technologia</th>
+                <th>φ⁺ (odpływ)</th>
+                <th>φ⁻ (przypływ)</th>
+                <th>φ_net (przepływ netto)</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-tbody"></tbody>
+          </table>
+          <div class="chart-box"><canvas id="chart-net"></canvas></div>
+        </div>
+        <div class="chart-box wide"><canvas id="chart-criteria"></canvas></div>
+        <div class="chart-box wide"><canvas id="chart-gaia"></canvas></div>
+        <p id="note" class="note"></p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

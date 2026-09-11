@@ -1,0 +1,11 @@
+**/node_modules
+**/dist
+**/.git
+**/tests
+**/.github
+**/.husky
+**/.env
+**/.env.*
+vendor/official-api/README.md
+vendor/official-api/CONTRIBUTING.md
+vendor/official-api/CODE_OF_CONDUCT.md

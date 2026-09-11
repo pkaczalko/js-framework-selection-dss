@@ -1,0 +1,477 @@
+{
+  "alternatives": [
+    "React",
+    "Angular",
+    "Vue.js",
+    "Svelte",
+    "Next.js",
+    "Nuxt.js"
+  ],
+  "criteria": [
+    {
+      "direction": "min",
+      "key": "bundle",
+      "name": "Rozmiar bundle [KB] (gzip)",
+      "p": 47.13,
+      "preference": "LINEAR",
+      "q": 11.78
+    },
+    {
+      "direction": "min",
+      "key": "tbt",
+      "name": "Total Blocking Time [ms]",
+      "preference": "LINEAR",
+      "thresholds": {
+        "N1000": {
+          "p": 333.3273028621168,
+          "q": 83.3318257155292
+        },
+        "N20": {
+          "p": 28.712808069261047,
+          "q": 7.178202017315262
+        }
+      },
+      "thresholds_per_scenario": true
+    },
+    {
+      "direction": "min",
+      "key": "memory",
+      "name": "Zużycie pamięci [MB]",
+      "p": 10.46,
+      "preference": "LINEAR",
+      "q": 2.61
+    },
+    {
+      "direction": "min",
+      "key": "learn",
+      "name": "Próg wejścia [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "dev_speed",
+      "name": "Szybkość developmentu [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "ecosystem",
+      "name": "Dojrzałość ekosystemu [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "popular",
+      "name": "Popularność [% użycia]",
+      "p": 13.1,
+      "preference": "LINEAR",
+      "q": 3.28
+    },
+    {
+      "direction": "max",
+      "key": "community",
+      "name": "Aktywność społeczności [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "lts",
+      "name": "Wsparcie/LTS [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "ssr",
+      "name": "Wsparcie SSR/SSG [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "max",
+      "key": "scale",
+      "name": "Skalowalność architektoniczna [1-5]",
+      "p": 2,
+      "preference": "LEVEL",
+      "q": 0
+    },
+    {
+      "direction": "min",
+      "key": "lcp",
+      "name": "Largest Contentful Paint [ms]",
+      "preference": "LINEAR",
+      "thresholds": {
+        "N1000": {
+          "p": 904.3396650165371,
+          "q": 226.08491625413427
+        },
+        "N20": {
+          "p": 860.2068951275618,
+          "q": 215.05172378189044
+        }
+      },
+      "thresholds_per_scenario": true
+    },
+    {
+      "direction": "min",
+      "key": "cls",
+      "name": "Cumulative Layout Shift [—]",
+      "preference": "LINEAR",
+      "thresholds": {
+        "N1000": {
+          "p": 0.12194067432795161,
+          "q": 0.030485168581987902
+        },
+        "N20": {
+          "p": 0.028866070047722115,
+          "q": 0.007216517511930529
+        }
+      },
+      "thresholds_per_scenario": true
+    },
+    {
+      "direction": "min",
+      "key": "total_byte_weight",
+      "name": "Łączna masa zasobów [B]",
+      "preference": "LINEAR",
+      "thresholds": {
+        "N1000": {
+          "p": 205132.01870617914,
+          "q": 51283.004676544784
+        },
+        "N20": {
+          "p": 139380.1787431492,
+          "q": 34845.0446857873
+        }
+      },
+      "thresholds_per_scenario": true
+    }
+  ],
+  "criterion_order": [
+    "bundle",
+    "tbt",
+    "memory",
+    "learn",
+    "dev_speed",
+    "ecosystem",
+    "popular",
+    "community",
+    "lts",
+    "ssr",
+    "scale",
+    "lcp",
+    "cls",
+    "total_byte_weight"
+  ],
+  "default_volume": "N20",
+  "default_volume_rationale": "N20 odpowiada istniejacemu (11-kryterialnemu) zachowaniu produkcyjnemu promethee_input.json; N20 zachowane jako domyslne dla kompatybilnosci wstecznej. N1000 jest jawnym wyborem uzytkownika dla scenariusza duzego wolumenu.",
+  "description": "Kanoniczny snapshot runtime modelu 14-kryterialnego DSS z wyborem wolumenu N20/N1000. Pochodna (deterministycznie generowana) zrodel analitycznych Etapu 4 i Etapu 5. Silnik promethee.ts (kryterio-agnostyczny) konsumentuje ten snapshot przez getDecisionMatrix(volume). NIE jest to jedyne zrodlo prawdy — pierwotne zrodla analityczne (etap4/etap5) pozostaja autorytatywne; ten plik jest kanoniczna reprezentacja runtime z jawna provenance.",
+  "invariants": {
+    "manual_profiles_scenario_independent": true,
+    "n_alternatives": 6,
+    "n_criteria": 14,
+    "static_threshold_criteria": [
+      "bundle",
+      "memory",
+      "learn",
+      "dev_speed",
+      "ecosystem",
+      "popular",
+      "community",
+      "lts",
+      "ssr",
+      "scale"
+    ],
+    "thresholds_per_scenario_criteria": [
+      "tbt",
+      "lcp",
+      "cls",
+      "total_byte_weight"
+    ]
+  },
+  "manual_profiles": {
+    "Enterprise": [
+      0.02,
+      0.013333333333333334,
+      0.04,
+      0.05,
+      0.07,
+      0.12,
+      0.08,
+      0.1,
+      0.18,
+      0.08,
+      0.2,
+      0.013333333333333334,
+      0.013333333333333334,
+      0.02
+    ],
+    "Podstawowy": [
+      0.025,
+      0.016666666666666666,
+      0.02,
+      0.2,
+      0.25,
+      0.15,
+      0.15,
+      0.05,
+      0.02,
+      0.05,
+      0.01,
+      0.016666666666666666,
+      0.016666666666666666,
+      0.025
+    ],
+    "SEO": [
+      0.06,
+      0.06,
+      0.05,
+      0.02,
+      0.07,
+      0.1,
+      0.08,
+      0.03,
+      0.02,
+      0.28,
+      0.05,
+      0.06,
+      0.06,
+      0.06
+    ],
+    "Wydajność": [
+      0.11,
+      0.08333333333333333,
+      0.18,
+      0.01,
+      0.05,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.08,
+      0.1,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.11
+    ]
+  },
+  "matrices": {
+    "N1000": {
+      "Angular": [
+        112.1,
+        791.85,
+        19.73,
+        5,
+        3,
+        5,
+        18.2,
+        4,
+        5,
+        4,
+        5,
+        4415.75,
+        0.0,
+        855290.0
+      ],
+      "Next.js": [
+        179.0,
+        514.5,
+        10.15,
+        4,
+        4,
+        5,
+        20.8,
+        4,
+        3,
+        5,
+        5,
+        2549.0,
+        0.0863,
+        228723.0
+      ],
+      "Nuxt.js": [
+        83.3,
+        1407.9,
+        41.75,
+        3,
+        4,
+        4,
+        4.0,
+        3,
+        3,
+        5,
+        4,
+        2925.3999999999996,
+        0.0,
+        775893.0
+      ],
+      "React": [
+        91.8,
+        509.0,
+        12.73,
+        3,
+        4,
+        5,
+        44.7,
+        5,
+        3,
+        4,
+        5,
+        2122.5,
+        0.1548,
+        544767.0
+      ],
+      "Svelte": [
+        40.4,
+        405.0,
+        16.2,
+        1,
+        5,
+        3,
+        7.2,
+        3,
+        3,
+        4,
+        3,
+        4127.85,
+        0.2932,
+        491876.0
+      ],
+      "Vue.js": [
+        40.8,
+        779.95,
+        24.82,
+        2,
+        4,
+        4,
+        17.6,
+        3,
+        3,
+        3,
+        4,
+        4274.1,
+        0.2932,
+        495054.0
+      ]
+    },
+    "N20": {
+      "Angular": [
+        112.1,
+        89.0,
+        19.73,
+        5,
+        3,
+        5,
+        18.2,
+        4,
+        5,
+        4,
+        5,
+        4474.96,
+        0.179,
+        419584
+      ],
+      "Next.js": [
+        179.0,
+        43.0,
+        10.15,
+        4,
+        4,
+        5,
+        20.8,
+        4,
+        3,
+        5,
+        5,
+        2536.23,
+        0.086,
+        197741
+      ],
+      "Nuxt.js": [
+        83.3,
+        26.25,
+        41.75,
+        3,
+        4,
+        4,
+        4.0,
+        3,
+        3,
+        5,
+        4,
+        2855.89,
+        0.11,
+        340184
+      ],
+      "React": [
+        91.8,
+        0.0,
+        12.73,
+        3,
+        4,
+        5,
+        44.7,
+        5,
+        3,
+        4,
+        5,
+        2115.78,
+        0.128,
+        109060
+      ],
+      "Svelte": [
+        40.4,
+        14.0,
+        16.2,
+        1,
+        5,
+        3,
+        7.2,
+        3,
+        3,
+        4,
+        3,
+        2027.86,
+        0.11,
+        56169
+      ],
+      "Vue.js": [
+        40.8,
+        18.0,
+        24.82,
+        2,
+        4,
+        4,
+        17.6,
+        3,
+        3,
+        3,
+        4,
+        2029.71,
+        0.11,
+        59347
+      ]
+    }
+  },
+  "provenance": {
+    "authoritative_sources": "etap4 (dane) i etap5 (profile) pozostaja zrodlami analitycznymi",
+    "engine_source_of_truth": "promethee.ts (computePromethee/critic/merec)",
+    "generated_from": [
+      "migracja/etap4_model_14_scenariusze.json",
+      "migracja/deprecated_etap5_wagi_14.json"
+    ],
+    "generator": "perplexity/generate_dss_model14_data.py",
+    "role": "kanoniczny snapshot runtime (pochodna)"
+  },
+  "schema_version": "dss-model14-1"
+}

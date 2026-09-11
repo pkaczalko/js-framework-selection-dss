@@ -1,0 +1,20 @@
+{
+  "name": "thesis-dss-bench",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "measure": "node run-all.mjs",
+    "measure:resume": "node run-all.mjs --resume",
+    "measure:large": "node run-lighthouse-large.mjs",
+    "measure:large:resume": "node run-lighthouse-large.mjs --resume",
+    "extract:large": "node results/extract-limit1000.mjs"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "puppeteer-core": "^25.8.0"
+  }
+}
